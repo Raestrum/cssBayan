@@ -6,7 +6,7 @@
     font-family:ArgentumNovus-ExtraBold, 'Comic Sans MS', cursive;
     color:blue;
    }
-   body:hover
+   .colorchange:hover
    {
     color:black;
    }
