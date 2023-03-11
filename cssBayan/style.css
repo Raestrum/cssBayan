@@ -5,3 +5,10 @@
    body{
     font-family:ArgentumNovus-ExtraBold, 'Comic Sans MS', cursive;
    }
+   .decor{
+    margin: 2% 10% 0% 10%;
+   }
+   .pdecor{
+    margin: 0% 10% 0% 10%;
+   }
+
