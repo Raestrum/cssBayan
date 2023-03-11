@@ -1,0 +1,7 @@
+@font-face {
+    font-family: ArgentumNovus-ExtraBold; /* Гарнитура шрифта */
+    src: url(fonts/ArgentumNovus-ExtraBold.ttf); /* Путь к файлу со шрифтом */
+   }
+   body{
+    font-family:ArgentumNovus-ExtraBold, 'Comic Sans MS', cursive;
+   }
