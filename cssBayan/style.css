@@ -1,6 +1,6 @@
 @font-face {
-    font-family: ArgentumNovus-ExtraBold; /* Гарнитура шрифта */
-    src: url(fonts/ArgentumNovus-ExtraBold.ttf); /* Путь к файлу со шрифтом */
+    font-family: ArgentumNovus-ExtraBold; /* Ð“Ð°Ñ€Ð½Ð¸Ñ‚ÑƒÑ€Ð° ÑˆÑ€Ð¸Ñ„Ñ‚Ð° */
+    src: url(fonts/ArgentumNovus-ExtraBold.ttf); /* ÐŸÑƒÑ‚ÑŒ Ðº Ñ„Ð°Ð¹Ð»Ñƒ ÑÐ¾ ÑˆÑ€Ð¸Ñ„Ñ‚Ð¾Ð¼ */
    }
    body{
     font-family:ArgentumNovus-ExtraBold, 'Comic Sans MS', cursive;
@@ -23,13 +23,23 @@
    .memecontrol{
     display: flex;
     justify-content: center;
-    transition: 0.7s;
     opacity: 0;
     height: 0;
-    width: 100%;
+    width: 0;
+    margin: 0 auto;
+    transform: scale(0);
+    transition: 2s;
    }
+   .memecontrol img{
+    justify-content: center;
+    transform: scale(0);
+    transition: 2s;
+    width: 50%;
+    }
+    
    p:hover .memecontrol{
     display: flex;
+    transform: scale(1);
     justify-content: center;
     opacity: 1;
     height: 50%;
@@ -37,14 +47,8 @@
    }
    p:hover .memecontrol img{
     transform: scale(1);
+      justify-content: center;
    }
-   .memecontrol img{
-    transform: scale(0);
-    transition: 0.7s;
-    width: 50%;
-    display: inherit;
-    }
-    
 
  
 
