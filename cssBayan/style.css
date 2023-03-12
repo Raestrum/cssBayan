@@ -1,6 +1,6 @@
 @font-face {
-    font-family: ArgentumNovus-ExtraBold; /* Гарнитура шрифта */
-    src: url(fonts/ArgentumNovus-ExtraBold.ttf); /* Путь к файлу со шрифтом */
+    font-family: ArgentumNovus-ExtraBold; /* Ð“Ð°Ñ€Ð½Ð¸Ñ‚ÑƒÑ€Ð° ÑˆÑ€Ð¸Ñ„Ñ‚Ð° */
+    src: url(fonts/ArgentumNovus-ExtraBold.ttf); /* ÐŸÑƒÑ‚ÑŒ Ðº Ñ„Ð°Ð¹Ð»Ñƒ ÑÐ¾ ÑˆÑ€Ð¸Ñ„Ñ‚Ð¾Ð¼ */
    }
    body{
     font-family:ArgentumNovus-ExtraBold, 'Comic Sans MS', cursive;
@@ -10,40 +10,45 @@
    .main:hover
    {
     color:black;
-    display: flex;
-    flex-direction: column;
    }
    .decor{
     margin: 2% 10% 0% 10%;
+    cursor: pointer;
    }
    .pdecor{
     overflow: hidden;
     margin: 2% 10% 0% 10%;
-    display: flex;
+    /*display: flex; */
    }
    .memecontrol{
-    display: block;
+    display: flex;
+    justify-content: center;
     opacity: 0;
     height: 0;
     width: 0;
-   }
-   p:hover .memecontrol{
-    display: block;
-    display: flex;
-    justify-content: center;
-    opacity: 1;
-    height: 35vh;
-    width: 25vw;
-    margin:auto
+    margin: 0 auto;
+    transform: scale(0);
+    transition: 2s;
    }
    .memecontrol img{
-    transform: scale(1.2);
-    transition: 0.7s;
-    height: inherit;
-    width: inherit;
-    display: inherit;
+    justify-content: center;
+    transform: scale(0);
+    transition: 2s;
+    width: 50%;
     }
     
+   p:hover .memecontrol{
+    display: flex;
+    transform: scale(1);
+    justify-content: center;
+    opacity: 1;
+    height: 50%;
+    width: 100%;
+   }
+   p:hover .memecontrol img{
+    transform: scale(1);
+      justify-content: center;
+   }
 
  
 
