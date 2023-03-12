@@ -10,37 +10,38 @@
    .main:hover
    {
     color:black;
-    display: flex;
-    flex-direction: column;
    }
    .decor{
     margin: 2% 10% 0% 10%;
+    cursor: pointer;
    }
    .pdecor{
     overflow: hidden;
     margin: 2% 10% 0% 10%;
-    display: flex;
+    /*display: flex; */
    }
    .memecontrol{
-    display: block;
+    display: flex;
+    justify-content: center;
+    transition: 0.7s;
     opacity: 0;
     height: 0;
-    width: 0;
+    width: 100%;
    }
    p:hover .memecontrol{
-    display: block;
     display: flex;
     justify-content: center;
     opacity: 1;
-    height: 35vh;
-    width: 25vw;
-    margin:auto
+    height: 50%;
+    width: 100%;
+   }
+   p:hover .memecontrol img{
+    transform: scale(1);
    }
    .memecontrol img{
-    transform: scale(1.2);
+    transform: scale(0);
     transition: 0.7s;
-    height: inherit;
-    width: inherit;
+    width: 50%;
     display: inherit;
     }
     
